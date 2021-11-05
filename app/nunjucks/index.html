@@ -1,0 +1,666 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!-- ==================================================== -->
+<!-- ===================== hero ========================= -->
+<!-- ==================================================== -->
+<section class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <a href="" class="hero__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="hero__left">
+                <div class="hero__left__links">
+                    <ul>
+                        <li><a href="">Электронные подписи</a></li>
+                        <li><a href="">Токены</a></li>
+                        <li><a href="">КриптоПро</a></li>
+                    </ul>
+                </div>
+                <h1 class="hero__title">
+                    Электронные подписи
+                    для физических
+                    и юридических лиц
+                </h1>
+                <button class="btn__black" data-modal-show="1">Подобрать ЭП</button>
+            </div>
+            <div class="hero__right">
+                <div class="hero__right__img">
+                    <div class="hero__right__img__small left" style="background-image: url(img/hero__img__left.svg);"></div>
+                    <div class="hero__right__img__main" style="background-image: url(img/hero__main.jpeg);"></div>
+                    <div class="hero__right__img__small right" style="background-image: url(img/hero__img__right.svg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- ================= END hero ========================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- ===================== free ========================= -->
+<!-- ==================================================== -->
+<section class="free">
+    <div class="container">
+        <div class="free__content">
+            <div class="free__title">Бесплатное выездное обслуживание для клиентов Москвы и Московской области</div>
+            <div class="free__desc">Оставайтесь в офисе или дома – наш специалист приедет к вам и всё оформит!</div>
+            <img src="img/free.svg" alt="" class="free__img">
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- ================= END free ========================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- =================== products ======================= -->
+<!-- ==================================================== -->
+<section class="products">
+    <div class="container">
+        <div class="products__content">
+            <h2 class="sec__title">Выберите ключи электронной подписи</h2>
+            <div class="products__items">
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+            </div>
+            <div class="products__load__more">
+                <button class="btn__black">Посмотреть все</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- =============== END products ======================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- =================== products ======================= -->
+<!-- ==================================================== -->
+<section class="products">
+    <div class="container">
+        <div class="products__content">
+            <h2 class="sec__title">Выберите ключи электронной подписи</h2>
+            <div class="products__items">
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+            </div>
+            <div class="products__load__more">
+                <button class="btn__black">Посмотреть все</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- =============== END products ======================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- =================== products ======================= -->
+<!-- ==================================================== -->
+<section class="products">
+    <div class="container">
+        <div class="products__content">
+            <h2 class="sec__title">Выберите ключи электронной подписи</h2>
+            <div class="products__items">
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+                <!-- products__item -->
+                <div class="products__item">
+                    <div class="products__item__text">
+                        <div class="products__item__title">Электронные торги. Универсальный</div>
+                        <div class="products__item__desc">
+                            Электронная подпись для работы на большинстве популярных торговых площадках, включая «Фабрикант», «B2B-Center» и сервисы госорганов
+                        </div>
+                    </div>
+                    <div class="products__item__footers">
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Стандартный заказ </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">7 500 ₽</div>
+                                <button class="btn__blue" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                        <div class="products__item__footer">
+                            <div class="products__item__footer__label">
+                                <div class="products__item__footer__label__title">Срочный заказ </div>
+                                <div class="products__item__footer__label__question">
+                                    <svg class="products__item__footer__label__question__icon" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="7" cy="7.5" r="7" fill="#D2D2D2"/>
+                                        <path d="M6.17429 9.86134C6.13735 9.47712 6.15582 9.15201 6.22971 8.88601C6.3036 8.61262 6.40335 8.37987 6.52896 8.18776C6.66196 7.98826 6.80974 7.81831 6.97229 7.67792C7.14224 7.53015 7.2974 7.38976 7.43779 7.25676C7.58557 7.12376 7.70749 6.98706 7.80354 6.84667C7.8996 6.6989 7.94763 6.52526 7.94763 6.32576C7.94763 6.06715 7.87374 5.86026 7.72596 5.70509C7.58557 5.54992 7.33065 5.47234 6.96121 5.47234C6.84299 5.47234 6.71738 5.48712 6.58438 5.51667C6.45138 5.53884 6.31838 5.57578 6.18538 5.62751C6.05238 5.67184 5.92307 5.72726 5.79746 5.79376C5.67924 5.85287 5.5721 5.91567 5.47604 5.98217L4.92188 4.91817C5.20265 4.72606 5.52407 4.5672 5.88613 4.44159C6.25557 4.31598 6.6989 4.25317 7.21613 4.25317C7.91068 4.25317 8.45376 4.42312 8.84538 4.76301C9.23699 5.09551 9.43279 5.54623 9.43279 6.11517C9.43279 6.49201 9.38107 6.80603 9.27763 7.05726C9.18157 7.30109 9.05965 7.51167 8.91188 7.68901C8.7641 7.85895 8.60154 8.01042 8.42421 8.14342C8.24688 8.27642 8.08432 8.42051 7.93654 8.57567C7.78876 8.72345 7.66315 8.89709 7.55971 9.09659C7.45626 9.29609 7.40454 9.55101 7.40454 9.86134H6.17429ZM5.95263 11.4352C5.95263 11.1766 6.0339 10.9734 6.19646 10.8256C6.35901 10.6704 6.57329 10.5928 6.83929 10.5928C7.12007 10.5928 7.34174 10.6704 7.50429 10.8256C7.66685 10.9734 7.74813 11.1766 7.74813 11.4352C7.74813 11.6938 7.66685 11.9007 7.50429 12.0558C7.34174 12.211 7.12007 12.2886 6.83929 12.2886C6.57329 12.2886 6.35901 12.211 6.19646 12.0558C6.0339 11.9007 5.95263 11.6938 5.95263 11.4352Z" fill="white"/>
+                                    </svg>
+                                    <div class="products__item__footer__label__question__hint">
+                                        Выпуск электронной подписи от 30 минут с момента оплаты счёта и подачи документов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products__item__footer__main">
+                                <div class="products__item__footer__price">9 500 ₽</div>
+                                <button class="btn__blue border" data-modal-show="1">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END products__item -->
+            </div>
+            <div class="products__load__more">
+                <button class="btn__black">Посмотреть все</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- =============== END products ======================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- =================== contacts ======================= -->
+<!-- ==================================================== -->
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="contacts__content">
+            <h2 class="sec__title">Контакты</h2>
+            <div class="contacts__blocks">
+                <div class="contacts__block">
+                    <div class="contacts__block__text">
+                        <div class="contacts__block__item">
+                            <div class="contacts__block__item__icon" style="background-image: url(img/loc.svg);"></div>
+                            <div class="contacts__block__item__title">
+                                г.Химки, Ленинский проспект 2Б, офис 8
+                            </div>
+                        </div>
+                        <div class="contacts__block__item">
+                            <div class="contacts__block__item__icon" style="background-image: url(img/phone.svg);"></div>
+                            <div class="contacts__block__item__title"><a href="tel:+7 (499) 553-04-20">+7 (499) 553-04-20</a>, доб. 203</div>
+                        </div>
+                        <div class="contacts__block__item">
+                            <div class="contacts__block__item__icon" style="background-image: url(img/whatsapp.svg);"></div>
+                            <div class="contacts__block__item__title"><a href="http://wa.me/+7 925-948-66-88">+7 925-948-66-88</a>, WhatsApp</div>
+                        </div>
+                        <div class="contacts__block__item">
+                            <div class="contacts__block__item__icon" style="background-image: url(img/mail.svg);"></div>
+                            <div class="contacts__block__item__title"><a href="mailto:info@taxcom.su">info@taxcom.su</a></div>
+                        </div>
+                        <div class="contacts__block__item">
+                            <div class="contacts__block__item__icon" style="background-image: url(img/clock.svg);"></div>
+                            <div class="contacts__block__item__title">
+                                Пн – Чт: с 10:00 до 18:00 <br>
+                                Пт: с 10:00 до 17:00 <br>
+                                Сб - Вс: выходные
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__block__map" id="contacts__block__map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- =================== contacts ======================= -->
+<!-- ==================================================== -->
+
+<!-- ==================================================== -->
+<!-- ================== formblock ======================= -->
+<!-- ==================================================== -->
+<section class="formblock">
+    <div class="container">
+        <div class="formblock__content">
+            <h2 class="sec__title">Мы всегда рады вам помочь</h2>
+            <p class="sec__desc">Оставьте свой номер, если возникли вопросы. Мы перезвоним и поможем во всем разобраться</p>
+            <form action="" class="formblock__form" data-validate='formblock'>
+                <div class="inputgroup">
+                    <label for="">Имя</label>
+                    <div class="inputgroup__input required">
+                        <input name="name" type="text" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="inputgroup">
+                    <label for="">Номер телефона</label>
+                    <div class="inputgroup__input required">
+                        <input name="phone" type="text" placeholder="Номер телефона" data-mask="phone">
+                    </div>
+                </div>
+                <button class="btn__black">Получить консультацию</button>
+            </form>
+            <div class="formblock__form__politics">
+                Нажимая на кнопку, я выражаю свое согласие с <a href="">обработкой персональных данных ООО «Такском»</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================== -->
+<!-- ============== END formblock ======================= -->
+<!-- ==================================================== -->
+
+{% endblock %}

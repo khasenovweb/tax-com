@@ -1,0 +1,155 @@
+.header {
+    padding-top: 26rem;
+    padding-bottom: 26rem;
+    position: relative;
+    z-index: 3;
+}
+
+.header_logo {
+    img {
+        width: 200rem;
+        height: 69rem;
+    }
+}
+
+.header_content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__nav {
+    margin-left: auto;
+    a {
+        font-weight: 600;
+        font-size: 16rem;
+        color: @black;
+        text-decoration: none;
+        &:hover {
+            color: #787878;
+        }
+    }
+}
+
+.header__offices {
+    display: flex;
+    align-items: center;
+    margin-left: 60rem;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        .header__offices__arrow {
+            opacity: 0.7;
+        }
+        .header__offices__panel__wrapper {
+            visibility: visible;
+            .header__offices__panel {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.header__offices__panel__wrapper {
+    position: absolute;
+    left: -15rem;
+    top: 0;
+    padding-top: 30rem;
+    visibility: hidden;
+}
+
+.header__offices__panel {
+    box-shadow: 0px 29px 40px -10px rgba(29, 89, 114, 0.15);
+    border-radius: 15rem;
+    width: 220rem;
+    padding: 15rem;
+    transform: translateY(10rem);
+    transition: 0.3s;
+    opacity: 0;
+    background-color: #fff;
+}
+
+.header__offices__title {
+    margin-right: 5rem;
+    font-weight: 600;
+    font-size: 16rem;
+}
+
+.header__offices__arrow {
+    height: 4rem;
+    width: auto;
+}
+
+.header__phone {
+    font-weight: 600;
+    font-size: 16rem;
+    color: @black;
+    text-decoration: none;
+    margin-left: 60rem;
+}
+
+.header__offices__panel__item {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 1px solid #E9E9E9;
+    &:first-child {
+        padding-top: 0;
+    }
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.header__offices__panel__item__title {
+    font-weight: 600;
+    font-size: 14rem;
+}
+
+.header__offices__panel__item__desc {
+    font-size: 13rem;
+    margin-top: 3rem;
+}
+
+.header__offices__panel__btn {
+    text-align: center;
+    color: @black;
+    background-color: #D2D2D2;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 13rem;
+    font-weight: 600;
+    border-radius: 4rem;
+    padding: 10rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__offices {
+        margin-left: 50rem;
+    }
+    .header__phone {
+        margin-left: 50rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        border-bottom: 1px solid #F7F7F7;
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+    .header_logo {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header_content {
+        justify-content: space-between;
+    }
+    .header__offices {
+        margin-left: 0;
+    }
+}

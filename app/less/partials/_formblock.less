@@ -1,0 +1,48 @@
+.formblock {
+    padding-top: 60rem;
+    padding-bottom: 60rem;
+}
+
+.formblock__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    margin-top: 30rem;
+    grid-gap: 30rem;
+    .btn__black {
+        margin-top: 23rem;
+    }
+}
+
+.formblock__form__politics {
+    font-size: 10rem;
+    color: #8F8F8F;
+    margin-top: 10rem;
+    a {
+        color: #8F8F8F;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .formblock__form {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20rem;
+        .btn__black {
+            grid-column: span 2;
+            margin-top: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .formblock__form {
+        grid-template-columns: 1fr;
+        .btn__black {
+            grid-column: span 1;
+        }
+    }
+}

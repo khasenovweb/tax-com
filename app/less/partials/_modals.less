@@ -1,0 +1,115 @@
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100rem;
+    padding-bottom: 100rem;
+    overflow-y: auto;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        .modal {
+            transform: translateY(0);
+        }
+    }
+}
+
+.modal {
+    background-color: #fff;
+    width: 740rem;
+    border-radius: 10rem;
+    padding: 60rem 100rem;
+    position: relative;
+    transition: transform 0.3s;
+    transform: translateY(10rem);
+    
+    &.success {
+        .modal__content {
+            display: none;
+        }
+        .modal__success {
+            display: block;
+        }
+    }
+}
+.modal__success {
+    display: none;
+}
+
+.modal__title {
+    font-size: 28rem;
+    font-weight: 600;
+}
+
+.modal__desc {
+    font-size: 18rem;
+    margin-top: 10rem;
+    color: #4B4B4B;
+}
+
+.modal__form {
+    margin-top: 20rem;
+    .inputgroup {
+        margin-top: 15rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .btn__black {
+        margin-top: 20rem;
+    }
+}
+
+.modal__form__link {
+    margin-top: 5rem;
+    display: inline-block;
+    color: #1685CE;
+    text-decoration: none;
+    font-size: 13rem;
+    display: block;
+}
+
+.modal__form__politics {
+    margin-top: 15rem;
+    font-size: 10rem;
+    color: #8F8F8F;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .modal {
+        width: 90%;
+        padding-left: 60rem;
+        padding-right: 60rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .modal {
+        padding-left: 30rem;
+        padding-right: 30rem;
+    }
+}

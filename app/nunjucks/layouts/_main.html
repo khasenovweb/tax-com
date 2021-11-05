@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{{ title }}</title>
+	<meta name="description" content="SEO Description">
+	<link rel="stylesheet" href="css/inline.css">
+</head>
+<body>
+	<div class="global__wrapper">
+	<!-- ==================================================== -->
+	<!-- ==================== header ======================== -->
+	<!-- ==================================================== -->
+	<header class="header">
+		<div class="container">
+			<div class="header_content">
+				<a href="" class="header_logo">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+				<ul class="header__nav">
+					<li class="header__nav__item">
+						<a href="">Нужна помощь?</a>
+					</li>
+				</ul>
+				<div class="header__offices">
+					<div class="header__offices__title">Офисы</div>
+					<img src="img/offices__arrow.svg" alt="arrow" class="header__offices__arrow">
+					<div class="header__offices__panel__wrapper">
+						<div class="header__offices__panel">
+							<div class="header__offices__panel__items">
+								<div class="header__offices__panel__item">
+									<div class="header__offices__panel__item__title">Офис в Москве</div>
+									<div class="header__offices__panel__item__desc">г. Москва, м. Комсомольская, Комсомольская пл., д. 6</div>
+								</div>
+								<div class="header__offices__panel__item">
+									<div class="header__offices__panel__item__title">Офис в Зеленограде</div>
+									<div class="header__offices__panel__item__desc">г. Зеленоград, корп. 2305Б</div>
+								</div>
+								<div class="header__offices__panel__item">
+									<div class="header__offices__panel__item__title">График работы</div>
+									<div class="header__offices__panel__item__desc">
+										Пн – Чт: с 10:00 до 18:00 <br>
+										Пт: с 10:00 до 17:00 <br>
+										Сб - Вс: выходные 
+									</div>
+								</div>
+							</div>
+							<a data-scroll href="#contacts" class="header__offices__panel__btn">Контакты офисов</a>
+						</div>
+					</div>
+				</div>
+				<a href="tel:+7 (499) 553-04-20" class="header__phone">+7 (499) 553-04-20</a>
+			</div>
+		</div>
+	</header>
+	<!-- ==================================================== -->
+	<!-- ================ END header ======================== -->
+	<!-- ==================================================== -->
+
+	{% block content %}
+		
+	{% endblock %}
+
+	<!-- ==================================================== -->
+	<!-- ===================== footer ======================= -->
+	<!-- ==================================================== -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__logo">ООО «АИСТ»</div>
+				<ul class="footer__nav">
+					<li><a href="">Электронные подписи</a></li>
+					<li><a href="">Токены</a></li>
+					<li><a href="">КриптоПро</a></li>
+				</ul>
+				<div class="footer__contacts">
+					<div class="footer__contacts__label">Отдел продаж</div>
+					<div class="footer__contacts__item">
+						+7 (499) 553-04-20
+					</div>
+					<div class="footer__contacts__item">
+						<a href="">+7 (499) 553-04-20</a>
+					</div>
+					<button class="btn__gray">Напишите нам</button>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ==================================================== -->
+	<!-- ================= END footer ======================= -->
+	<!-- ==================================================== -->
+
+
+	<!-- ==================================================== -->
+	<!-- ===================== modals ======================= -->
+	<!-- ==================================================== -->
+	<div class="modal__wrapper" data-modal="1">
+		<div class="modal">
+			<div class="modal__close" data-modal-close="1">
+				<img src="img/modal-close.svg" alt="">
+			</div>
+			<div class="modal__content">
+				<div class="modal__title">Заявка на подключение</div>
+				<div class="modal__desc">
+					Мы перезвоним вам, проконсультируем по продукту 
+					и уточним все детали заказа
+				</div>
+				<form action="" class="modal__form" data-validate='modal'>
+					<div class="inputgroup">
+						<label for="">Имя</label>
+						<div class="inputgroup__input required">
+							<input name="name" type="text" placeholder="Как к вам обращаться">
+						</div>
+					</div>
+					<div class="inputgroup">
+						<label for="">Телефон</label>
+						<div class="inputgroup__input required">
+							<input name="phone" type="text" placeholder="+7 (ххх) ххх-хх-хх" data-mask="phone">
+						</div>
+					</div>
+					<div class="inputgroup">
+						<label for="">ИНН</label>
+						<div class="inputgroup__input required">
+							<input name="inn" type="text" placeholder="ИНН организации, ИП или физического лица">
+						</div>
+					</div>
+					<a href="" class="modal__form__link">Узнать ИНН физического лица можно на сайте nalog.ru</a>
+					<button class="btn__black">Отправить</button>
+					<div class="modal__form__politics">Нажимая кнопку «Отправить», я выражаю свое согласие с обработкой персональных данных ООО «Такском» в соответствии с Федеральным законом от 27.07.2006 №152-ФЗ «О персональных данных» и Политикой обработки Персональных данных ООО «Такском»</div>
+				</form>
+			</div>
+			<div class="modal__success">
+				<img src="img/success.svg" alt="">
+				<div class="modal__title">Спасибо! Ваша заявка отправлена</div>
+				<div class="modal__desc">
+					Наш менеджер свяжется с вами в ближайшее время
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__wrapper" data-modal="2">
+		<div class="modal success">
+			<div class="modal__close" data-modal-close="2">
+				<img src="img/modal-close.svg" alt="">
+			</div>
+			<div class="modal__success">
+				<img src="img/success.svg" alt="">
+				<div class="modal__title">Спасибо! Ваша заявка отправлена</div>
+				<div class="modal__desc">
+					Наш менеджер свяжется с вами в ближайшее время
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ==================================================== -->
+	<!-- ================= END modals ======================= -->
+	<!-- ==================================================== -->
+
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/main.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		//Яндекс Карта
+			ymaps.ready(init);
+			var myMapAll;
+
+			function init() {
+				myMapAll = new ymaps.Map("contacts__block__map", {
+					center: [55.809874, 37.602939],
+					zoom: 17,
+				});
+				var myPlacemark_1 = new ymaps.Placemark([55.809874, 37.602939], {
+					balloonContentHeader: "Название объекта",
+					balloonContentBody: "Описание объекта",
+					balloonContentFooter: "",
+					hintContent: "Кликните для более подробной информации",
+				});
+				myMapAll.geoObjects.add(myPlacemark_1);
+			}
+			//END Яндекс Карта
+	</script>
+
+	<script>
+		// Получаем ширину скроллбара
+		function get_scrollbar_width(){
+			let div = document.createElement('div');
+
+			div.style.overflowY = 'scroll';
+			div.style.width = '50px';
+			div.style.height = '50px';
+			
+			// мы должны вставить элемент в документ, иначе размеры будут равны 0
+			document.body.append(div);
+			let scrollWidth = div.offsetWidth - div.clientWidth;
+			
+			div.remove();
+			console.log(scrollWidth);
+			
+			return scrollWidth;
+		}
+		// END Получаем ширину скроллбара
+	</script>
+
+	<script>
+		$("form[data-validate='modal']").each(function (i, el) {
+			$(el).validate({
+				rules: {
+					phone: "phone",
+					name: {
+						required: true
+					},
+					inn: {
+						required: true
+					},
+				},
+				messages: {
+					name: {
+						required: "Введите ваше имя"
+					},
+					inn: {
+						required: "Введите ваш ИНН"
+					},
+				},
+				submitHandler: function(form) {
+					var data = $(form).serialize();
+					console.log('Валидно');
+					$.ajax({
+					    url: 'sender.html',
+					    type: 'get',
+					    data: data,
+					    success: function() {
+					        $(form).closest('.modal').addClass('success');
+					    }
+					});
+				}
+			});
+		});
+	</script>
+
+	<script>
+		$("form[data-validate='formblock']").each(function (i, el) {
+			$(el).validate({
+				rules: {
+					phone: "phone",
+					name: {
+						required: true
+					},
+				},
+				messages: {
+					name: {
+						required: "Введите ваше имя"
+					},
+				},
+				submitHandler: function(form) {
+					var data = $(form).serialize();
+					console.log('Валидно');
+					$.ajax({
+					    url: 'sender.html',
+					    type: 'get',
+					    data: data,
+					    success: function() {
+							$(form).find('input').val('');
+							$('[data-modal="2"]').addClass('active');
+					        var scrollbar_width = get_scrollbar_width();
+							$('body').css('padding-right', scrollbar_width+'px');
+							$('body').addClass('overflowhidden');
+					    }
+					});
+				}
+			});
+		});
+	</script>
+
+	</div>
+
+</body>
+</html>
