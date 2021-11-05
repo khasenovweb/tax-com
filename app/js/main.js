@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 
 
-    
+
     $('.products__items').each(function(i, el){
         var items = $(el).find('.products__item');
         if(items.length <= 3) {
@@ -117,8 +117,5 @@ $(document).ready(function(){
             $(this).hide();
         });
     }); 
-    // $('.products__load__more .btn__black').click(function(){
-    //     $(this).closest('.products__items').find('.products__item').show();
-    // });
 
 });

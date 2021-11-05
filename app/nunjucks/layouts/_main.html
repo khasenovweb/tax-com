@@ -265,6 +265,7 @@
 					    success: function() {
 							$(form).find('input').val('');
 							$('[data-modal="2"]').addClass('active');
+							$('[data-modal="2"]').find('.modal').addClass('success');
 					        var scrollbar_width = get_scrollbar_width();
 							$('body').css('padding-right', scrollbar_width+'px');
 							$('body').addClass('overflowhidden');
