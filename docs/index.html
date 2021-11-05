@@ -717,11 +717,11 @@
             </div>
         </div>
         <div class="modal__wrapper" data-modal="2">
-            <div class="modal success">
+            <div class="modal">
                 <div class="modal__close" data-modal-close="2">
                     <img src="img/modal-close.svg" alt="">
                 </div>
-                <div class="modal__success">
+                <div class="modal__success__static">
                     <img src="img/success.svg" alt="">
                     <div class="modal__title">Спасибо! Ваша заявка отправлена</div>
                     <div class="modal__desc"> Наш менеджер свяжется с вами в ближайшее время </div>
@@ -829,6 +829,7 @@
                             success: function() {
                                 $(form).find('input').val('');
                                 $('[data-modal="2"]').addClass('active');
+                                $('[data-modal="2"]').find('.modal').addClass('success');
                                 var scrollbar_width = get_scrollbar_width();
                                 $('body').css('padding-right', scrollbar_width + 'px');
                                 $('body').addClass('overflowhidden');
