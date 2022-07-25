@@ -57,7 +57,11 @@ $(document).ready(function(){
 
     $('[data-modal-show]').click(function(){
         var id = $(this).attr('data-modal-show');
+        var product = $(this).attr('data-modal-product-name');
+        var price = $(this).attr('data-modal-product-price');
         $('[data-modal="'+id+'"]').addClass('active');
+        $('[data-modal="'+id+'"] form input[name="product"]').val(product);
+        $('[data-modal="'+id+'"] form input[name="price"]').val(price);
         var scrollbar_width = get_scrollbar_width();
         $('body').css('padding-right', scrollbar_width+'px');
         $('body').addClass('overflowhidden');
